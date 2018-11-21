@@ -6,7 +6,7 @@ public class People {
   }
 }
 
-class person {
+class Person {
   public static void main(String[] args) {
     People amy;
     amy = new People();
