@@ -6,6 +6,16 @@ public class People {
   }
 }
 
+class Kernighan {
+  public static void main(String[] args) {
+    int sum = 0, i = 0, j = 100;
+    for (i = 1; i <= j; i+=1) {
+      sum += i;
+    }
+    System.out.println(sum);
+  }
+}
+
 class Person {
   public static void main(String[] args) {
     People amy;
