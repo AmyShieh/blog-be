@@ -47,9 +47,10 @@ public class BasicType {
       }
     }
 
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("输入整数，程序判断该整数是否在数组中:");
-    int number = scanner.nextInt();
+//    Scanner scanner = new Scanner(System.in);
+//    System.out.println("输入整数，程序判断该整数是否在数组中:");
+//    int number = scanner.nextInt();
+    int number = 12;
     int count = 0;
     end = arrLength;
     middle = (start+end) / 2;
@@ -84,5 +85,14 @@ public class BasicType {
     } else {
       System.out.println("在");
     }
+
+    int x = 1;
+    short t = 12 + 'a';
+    char c  = 'a' + 1;
+//    char m = 'a' + x; // 精度缺失
+    byte n = 'a' + 1;
+
+
+
   }
 }
