@@ -51,6 +51,8 @@ public class BasicType {
     System.out.println("输入整数，程序判断该整数是否在数组中:");
     int number = scanner.nextInt();
     int count = 0;
+    end = arrLength;
+    middle = (start+end) / 2;
     boolean flag = false;
 //    while (count != arr.length) {
 //      if(arr[count] == number) {
@@ -64,14 +66,23 @@ public class BasicType {
 //    } else {
 //      System.out.println("不在");
 //    }
-    while (number != arr[count]) {
-
+    while (number != arr[middle]) {
+      if( number < arr[middle]) {
+        end = middle;
+      } else {
+        start = middle;
+      }
+      middle = (start + end) / 2;
+      count++;
+      if(count >arrLength) {
+        break;
+      }
     }
 
     if (count > arrLength / 2) {
-
+      System.out.println("不在");
     } else {
-
+      System.out.println("在");
     }
   }
 }
