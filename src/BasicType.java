@@ -52,17 +52,26 @@ public class BasicType {
     int number = scanner.nextInt();
     int count = 0;
     boolean flag = false;
-    while (count != arr.length) {
-      if(arr[count] == number) {
-        flag = true;
-        break;
-      }
-      count++;
+//    while (count != arr.length) {
+//      if(arr[count] == number) {
+//        flag = true;
+//        break;
+//      }
+//      count++;
+//    }
+//    if (flag) {
+//      System.out.println("在");
+//    } else {
+//      System.out.println("不在");
+//    }
+    while (number != arr[count]) {
+
     }
-    if (flag) {
-      System.out.println("在");
+
+    if (count > arrLength / 2) {
+
     } else {
-      System.out.println("不在");
+
     }
   }
 }
