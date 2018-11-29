@@ -1,5 +1,5 @@
 public class Radio {
-  int openRadio(Battery battery) {
-    return battery.electricityAmount -= 10;
+  void openRadio(Battery battery) {
+    battery.electricityAmount -= 10;
   }
 }
