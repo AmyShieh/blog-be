@@ -17,6 +17,10 @@ class Kernighan {
 }
 
 class Person {
+  int leg;
+  int hand;
+  String name;
+
   public static void main(String[] args) {
     People amy;
     amy = new People();
@@ -25,6 +29,18 @@ class Person {
     System.out.println("身高"+amy.height);
     System.out.println("眼睛"+amy.eye);
     amy.speak("I'm brave, and alive");
+    Person alive = new Person("Alive");
+  }
+
+  Person(String name) {
+    this.name = name;
+    this.init();
+    System.out.println(name+" has "+leg+" leg and " + hand + " hand");
+  }
+
+  void init() {
+    leg = 2;
+    hand = 2;
   }
 }
 
